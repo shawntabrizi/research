@@ -1,6 +1,11 @@
 \subsection{Parachains}
+<<<<<<< HEAD
 \subsubsection{Block Production}
 In outline, a collator produces a parachain block, sends it to the parachain validators, who sign its header as valid, and the header with enough signatures is placed on the relay chain. At this point, the parachain block is as canonical as the relay chain block its header appeared in. If that is in the best chain, so is the parachain block and when that is finalised, so is the parachain block.
+=======
+
+\paragraph{Block Production}
+>>>>>>> 7ed642edfa100eeab38e8c33abf2edc1280a27b2
 
 Because the parachain validators switch parachains frequently, they are stateless clients of the parachain. Thus we distinguish between the parachain block $B$, which is enough for full nodes of the parachain such as collators to update the parachain state, and the {\em Proof of Validity(PoV) block} $B_{PoV}$, which a validator who does not have the parachain state can verify.
 
@@ -21,6 +26,10 @@ For a single chain, such as bitcoin, as long as 51% of hashpower is honest, not 
 To this end we designed an availability scheme that uses erasure coding \cite{} to distribute the parachain PoV to all validators.
 When any misbehaviour, unavailability particularly in relation to invalidity, is detected the PoV can be reconstructed from the distributed erasure coded pieces.
 
+<<<<<<< HEAD
 If a block is available, then full nodes of the parachain, and any light client that has the PoV block can check its validity. We rely on nodes actin as {\em fishermen} to report invalidity in this case. They would need to back any claim with their own stake in DOTs. We would assume that most collators would be fishermen, as they have a stake in continued validity of the chain and are alrerady running full nodes, so all they need is stake in DOTs.
 
 \subsubsection{ICMP} \label{sec:ICMP}
+=======
+\paragraph{ICMP}
+>>>>>>> 7ed642edfa100eeab38e8c33abf2edc1280a27b2
