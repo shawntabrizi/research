@@ -4,13 +4,3 @@ lib/
 include/
 bin/
 .DS_Store
-
-*.aux
-*.bbl
-*.log
-*.blg
-*.bak
-*.out
-*.snm
-*.nav
-*.toc
